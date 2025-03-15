@@ -1,5 +1,6 @@
+"use client";
 import Game from "@/components/game";
 
-export default function GameRoute({ params }: { params: { id: string } }) {
+export default function GameWrapper({ params }: { params: { id: string } }) {
   return <Game roomId={params.id} />;
 }
